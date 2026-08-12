@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SasquatchSnacks.Data;
 
@@ -11,9 +12,11 @@ using SasquatchSnacks.Data;
 namespace SasquatchSnacks.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260812040909_AddECommerceModels")]
+    partial class AddECommerceModels
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -46,7 +49,7 @@ namespace SasquatchSnacks.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ConsumableProducts");
+                    b.ToTable("ConsumableProduct");
                 });
 
             modelBuilder.Entity("SasquatchSnacks.Models.Customer", b =>
@@ -110,7 +113,7 @@ namespace SasquatchSnacks.Migrations
 
                     b.HasIndex("RentalEquipmentId");
 
-                    b.ToTable("RentalBookings");
+                    b.ToTable("RentalBooking");
                 });
 
             modelBuilder.Entity("SasquatchSnacks.Models.RentalEquipment", b =>
@@ -164,6 +167,7 @@ namespace SasquatchSnacks.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("OperatingHours")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");

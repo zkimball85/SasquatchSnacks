@@ -9,7 +9,28 @@ public class ApplicationDbContext : DbContext
     {
     }
 
-    // We will add DbSet Properties for each of our models here
-    // after we create them in the Models folder. 
+    /// <summary>
+    /// Gets or sets the DbSet for Customer entities.
+    /// </summary>
     public DbSet<Customer> Customers { get; set; }
+
+    /// <summary>
+    /// Gets or sets the DbSet for RentalEquipment entities.
+    /// </summary>
+    public DbSet<RentalEquipment> RentalEquipment { get; set; }
+
+    /// <summary>
+    /// Gets or sets the DbSet for RentalBooking entities.
+    /// </summary>
+    public DbSet<RentalBooking> RentalBookings { get; set; }
+
+    /// <summary>
+    /// Gets or sets the DbSet for ConsumableProduct entities.
+    /// </summary>
+    public DbSet<ConsumableProduct> ConsumableProducts { get; set; }
+
+    /// <summary>
+    /// Gets or sets the DbSet for VendingLocation entities.
+    /// </summary>
+    public DbSet<VendingLocation> VendingLocations { get; set; }
 }
