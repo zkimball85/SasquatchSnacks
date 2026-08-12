@@ -22,12 +22,12 @@ public class ApplicationDbContext : DbContext
     /// <summary>
     /// Gets or sets the DbSet for RentalBooking entities.
     /// </summary>
-    public DbSet<RentalBooking> RentalBooking { get; set; }
+    public DbSet<RentalBooking> RentalBookings { get; set; }
 
     /// <summary>
     /// Gets or sets the DbSet for ConsumableProduct entities.
     /// </summary>
-    public DbSet<ConsumableProduct> ConsumableProduct { get; set; }
+    public DbSet<ConsumableProduct> ConsumableProducts { get; set; }
 
     /// <summary>
     /// Gets or sets the DbSet for VendingLocation entities.

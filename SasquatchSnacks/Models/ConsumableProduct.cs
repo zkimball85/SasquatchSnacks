@@ -19,6 +19,7 @@ public class ConsumableProduct
     public string ProductName { get; set; } = null!;
 
     // The product description is a required field and will be used to provide more information about the product being sold.
+    [Required]
     public string Category { get; set; } = null!;
 
     // The price is a required field and will be used to determine the cost of the product.

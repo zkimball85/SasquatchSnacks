@@ -2,6 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using SasquatchSnacks.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 
 namespace SasquatchSnacks.Models;
 
@@ -35,5 +36,5 @@ public class RentalEquipment
     public bool IsActive { get; set; }
 
     // This property will be used to establish a one-to-many relationship between RentalEquipment and RentalBooking.
-    public required ICollection<RentalBooking> Bookings { get; set; }
+    public ICollection<RentalBooking> Bookings { get; set; } = new List<RentalBooking>();
 }
