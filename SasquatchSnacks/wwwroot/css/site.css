@@ -1,3 +1,33 @@
+:root {
+    /* Sasquatch Snacks Forest Theme*/
+    --sq-pine-dark: #1A3621; /* Deep forest green */
+    --sq-pine-light: #2C5E38; /* Bright tree green */
+    --sq-wood-brown: #5C4033; /* Tree bark brown */
+    --sq-earth-tan: #D2B48C; /* Khaki/tan for light backgrounds */
+    --sq-text-light: #F8F9FA; /* Off-white for contrast */
+}
+
+/* Custom Utility classes */
+.bg-forest-dark {
+    background-color: var(--sq-pine-dark) !important;
+}
+
+.bg-wood {
+    background-color: var(--sq-wood-brown) !important;
+}
+
+.text-tan {
+    color: var(--sq-earth-tan) !important;
+}
+
+.navbar-brand-custom {
+    color: var(--sq-earth-tan) !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+
 html {
   font-size: 14px;
 }
