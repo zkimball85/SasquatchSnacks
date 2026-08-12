@@ -11,4 +11,5 @@ public class ApplicationDbContext : DbContext
 
     // We will add DbSet Properties for each of our models here
     // after we create them in the Models folder. 
+    public DbSet<Customer> Customers { get; set; }
 }
