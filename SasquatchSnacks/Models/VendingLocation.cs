@@ -23,7 +23,7 @@ public class VendingLocation
 
     // The operating hours is an optional field and will be used to provide
     // the hours of operation for the vending location.
-    public string? OperatingHours { get; set; } = null!;
+    public string OperatingHours { get; set; } = null!;
 
     // The isPubliclyAccessible is a required field and will be used to determine
     // if the vending location is accessible to the public or not.
