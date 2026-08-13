@@ -7,9 +7,32 @@
     --sq-text-light: #F8F9FA; /* Off-white for contrast */
 }
 
+.hero-background {
+    background-image: linear-gradient(rgba(26, 54, 33, 0.7), rgba(26, 54, 33, 0.7)), url('/images/sasquatchsnackslogo.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.hero-section {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
+
 /* Custom Utility classes */
 .bg-forest-dark {
     background-color: var(--sq-pine-dark) !important;
+}
+
+.bg-forest-light {
+    background-color: var(--sq-pine-light) !important;
 }
 
 .bg-wood {
@@ -48,6 +71,7 @@ html {
 }
 
 body {
+  background-color: var(--sq-earth-tan);
   margin-bottom: 60px;
 }
 
