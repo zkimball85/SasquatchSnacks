@@ -2,7 +2,31 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome To Sasquatch Snacks</h1>
-    <p>Automated Vending and Event Rentals, Fully Managed.</p>
+<!-- Hero Section with Background Image -->
+<div class="text-center hero-background text-light rounded-3 mb-5 shadow-sm mt-4" style="padding-top: 8rem; padding-bottom: 8rem;">
+    <h1 class="display-4 fw-bold text-tan">Welcome to Sasquatch Snacks</h1>
+    <p class="lead">Premium automated vending and commercial party equipment rentals serving Pierce County.</p>
+    <p>Whether you need a quick snack on the go or a commercial popcorn machine for your next big event, we've got you covered.</p>
+    <a class="btn btn-outline-light text-tan btn-lg mt-3" asp-controller="RentalEquipment" asp-action="Index" role="button">Explore Party Rentals</a>
+</div>
+
+<div class="row align-items-md-stretch text-center">
+    <!-- Vending Side -->
+    <div class="col-md-6 mb-4">
+        <div class="h-100 p-5 bg-forest-dark text-light border-0 rounded-3 shadow-sm">
+            <h2 class="text-tan">Automated Vending</h2>
+            <p>Find our smart vending machines located throughout the area. Fully stocked with premium snacks, drinks, and daily essentials.</p>
+            <!-- This will eventually link to a location map/list -->
+            <a class="btn btn-outline-light text-tan" asp-controller="VendingMachines" asp-action="Index" role="button">Find a Location (Coming Soon)</a>
+        </div>
+    </div>
+
+    <!-- Rental Side -->
+    <div class="col-md-6 mb-4">
+        <div class="h-100 p-5 bg-forest-dark text-light border-0 rounded-3 shadow-sm">
+            <h2 class="text-tan">Event Rentals</h2>
+            <p>Take your party to the next level with our commercial-grade concession equipment.</p>
+            <a class="btn btn-outline-light text-tan" asp-controller="RentalEquipment" asp-action="Index" role="button">Book Equipment (Coming Soon)</a>
+        </div>
+    </div>
 </div>
